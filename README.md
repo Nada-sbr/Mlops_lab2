@@ -6,18 +6,18 @@ Initialiser le dépôt Git et  Vérifier l’état du
 
 dépôt :
 
-![1.png](attachment:1ff39211-6029-45d8-871e-d910c0e07539:1.png)
+![1.png](screen-lab02/1.png)
 
 **Étape 2 : Premier commit du projet** 
 **Objectif** : Voir comment Git suit les changements dans les fichiers de travail et comment utiliser les outils de staging (`git diff` et `git diff --staged`).
 
 **MLOps**Créer le premier commit :
 
-![2.png](attachment:67840b8e-8a9a-43b9-a247-28de0d9c112d:2.png)
+![2.png](screen-lab02/2.png)
 
 Afficher l’historique :
 
-![3.png](attachment:173dc037-6b3e-4aeb-ab2b-c0a4731d9457:3.png)
+![3.png](screen-lab02/3.png)
 
 **Étape 3 : Observer une modification avec git diff**
 
@@ -25,15 +25,15 @@ Afficher l’historique :
 
 Afficher les différences par rapport au dernier commit 
 
-![4.png](attachment:3c81585c-ee7b-4e77-8d0e-e7f39de7f82d:4.png)
+![4.png](screen-lab02/4.png)
 
 Ajouter le fichier modifié à l’index et  Afficher les différences en staging :
 
-![5.png](attachment:399f09bd-87a5-42a2-96db-6f2070161e1a:5.png)
+![5.png](screen-lab02/5.png)
 
 Créer un commit :
 
-![6.png](attachment:347b9ab6-e1ec-46b4-a7af-c9034ac21e26:613629cd-e19d-44e1-abb7-3aa261c922e6.png)
+![6.png](screen-lab02/6.png)
 
 **Étape 4 : Créer une branche de fonctionnalité liée au lab:**
 
@@ -41,7 +41,8 @@ Créer un commit :
 
 Créer une branche Ajouter et committer puis aficher Lister les branches  et puis Revenir sur la branche principale :
 
-![image.png](attachment:b035aaa0-7d12-4e09-a9df-26cc6868ccbb:7a6727d6-4d0c-47a8-ad88-82ceadd46c9f.png)
+<img width="1856" height="562" alt="image" src="https://github.com/user-attachments/assets/6d2bea69-7b7d-4132-bd5a-cb1a58246a87" />
+
 
 **Étape 5 : Fusionner la branche feature dans la branche principale**
 
@@ -49,80 +50,86 @@ Créer une branche Ajouter et committer puis aficher Lister les branches  et pui
 
 Fusionner la branche 
 
-![image.png](attachment:e45b52bc-7f69-4ec1-800f-e7e14eb1fefb:051e8164-6b06-42ac-95b9-71fd6e661400.png)
+<img width="1856" height="311" alt="image" src="https://github.com/user-attachments/assets/fbd0bd73-4736-4260-b168-1f2d808d3dc2" />
+
 
 Vérifier l’historique :
 
-![7.png](attachment:f1ff5a0a-ac93-4340-a0cd-dd1ee2916d5e:7.png)
+![7.png](screen-lab02/7.png)
 
 **Étape 6 : Créer un conflit de merge sur src/train.py**
 
 Créer une nouvelle branche Modifier `src/train.py`  puuis Ajouter et committer :
-
-![8.png](attachment:d5fce927-5709-4cc4-8f98-fb6d1f1b07d1:8.png)
+![8.png](screen-lab02/8.png)
 
 Revenir sur la branche principale puis Modifier la même ligne dans `src/train.py` puis Ajouter et committer  :
-
-![9.png](attachment:08870e27-2e2e-4dd4-b5a5-e2ccecef76e2:9.png)
-
+![9.png](screen-lab02/9.png)
 Tenter la fusion  il y’a un conflit alors Résoudre le conflit :
 
-![image.png](attachment:a7e002e3-ee78-4cee-aa41-3f154852685b:e186ed4d-95ca-49b7-9206-a715d40f5bed.png)
+<img width="1904" height="349" alt="image" src="https://github.com/user-attachments/assets/be085a8e-6839-47f2-9af6-89ae1b68f83d" />
+
 
 **Étape 7 : Utiliser git stash dans le contexte du lab**
 
 Modifier un fichier sans vouloir committer (src/rollback.py) et Afficher l’état :
 
-![10.png](attachment:1bae95d1-1bad-4920-a70a-52c786d0e03b:10.png)
+![10.png](screen-lab02/10.png)
 
 Mettre de côté les modifications et Lister les stash  et Récupérer les modifications :
 
-![11.png](attachment:ba1253e6-7565-4605-827f-b8dd5c2ed32d:11.png)
+![11.png](screen-lab02/11.png)
 
-![12.png](attachment:fbe6b05a-3770-4eb6-9715-6ef3d768f533:12.png)
+<img width="1763" height="801" alt="image" src="https://github.com/user-attachments/assets/471d1cb2-54e9-450f-90ba-62382e8baf52" />
+
 
 **Étape 8 : Tester git reset sur un fichier d’expérimentation**
 
 Créer un dossier d’expérimentation et Créons un fichier de test:
 
-![13.png](attachment:9b5393e3-bed0-491d-8cf9-366a75408524:fbc18a1a-4544-4ee4-b8f8-178817b3b332.png)
+![13.png](screen-lab02/13.png)
 
 Modifier puis committer deux fois :
 
-![image.png](attachment:b5160779-9708-4373-b754-34e69e7a615b:44790aea-259e-46d7-8f37-66b694501f85.png)
+<img width="1895" height="317" alt="image" src="https://github.com/user-attachments/assets/797f981b-fd0e-4f23-8280-160adda48d01" />
 
-![14.png](attachment:10962103-fac3-43ef-b033-407f6325f82e:06c52251-829b-4489-b813-106415844d16.png)
+
+<img width="1888" height="316" alt="image" src="https://github.com/user-attachments/assets/fc993ae1-6c26-4f3f-8e38-ab5fe87eade7" />
+
 
 Effectuer un reset soft :
 
-![image.png](attachment:64c7ad86-52ac-450e-89f7-10d5bb634468:de28b912-77d8-46dc-9ebc-d3c9220b692e.png)
+<img width="1888" height="747" alt="image" src="https://github.com/user-attachments/assets/5be8976b-6341-4a53-b3c4-eb12ab6a2dd9" />
+
 
 Effectuer un reset mixed puis un reset hard :
 
-![15.png](attachment:77ffe65a-b38f-4cbc-9b46-fbbcd4f29573:15.png)
+![15.png](screen-lab02/15.png)
 
 **Étape 9 : Annuler un commit avec git revert**
 
 Ajouter un changement non souhaité dans `src/api.py` puis on a Lister les commits  et on a fait Revert du dernier commit :
 
-![16.png](attachment:878d5bab-11ab-4581-9bd0-2133edfb867c:16.png)
+![16.png](screen-lab02/16.png)
 
 on Vérifie le contenu du fichier :
 
-![17.png](attachment:55c158a1-6077-41ea-a199-e5bef3da3bd6:17.png)
+![17.png](screen-lab02/17.png)
 
 **Étape 10 : Rebase d’une branche feature sur la branche principale**
 
 Créons une branche et Modifions`src/monitor_drift.py` pui on Ajout et commit:
 
-![18.png](attachment:c31932e3-7187-4c55-808f-54b58692bd86:108a3600-6f39-4943-8155-c8890815b0fe.png)
+<img width="1913" height="329" alt="image" src="https://github.com/user-attachments/assets/251fcf6a-ae95-4f09-9947-7ad31f8b5d05" />
+
 
  
 
 Revenir sur la branche principale et créons un nouveau commit sur un autre fichier (par exemple `src/generate_data.py`)  puis Revenons sur la branche feature : 
 
-![image.png](attachment:16c3355a-7a67-45b8-8206-786b793d1690:91132abd-6134-49e6-afe3-8b064eb96e29.png)
+<img width="1913" height="476" alt="image" src="https://github.com/user-attachments/assets/ac31e644-f4a1-4c66-990d-e01960889ebe" />
+
 
 Rebasons la branche feature sur la branche principale Vérifions l’historique :
 
-![image.png](attachment:db1daa27-d2ca-4944-b3b8-74f425166993:3a1141d3-0858-4afc-ae2c-6c71daa2d188.png)
+<img width="1913" height="677" alt="image" src="https://github.com/user-attachments/assets/77f5061a-5142-42e0-b713-ddd25a9e9c49" />
+
