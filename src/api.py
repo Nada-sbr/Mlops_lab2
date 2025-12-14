@@ -1,24 +1,7 @@
 from __future__ import annotations
 
 
-"""
-API FastAPI de prédiction de churn pour le lab MLOps.
 
-
-Ce service :
-- charge dynamiquement le modèle courant indiqué dans `registry/current_model.txt` ;
-- expose un endpoint `/health` pour vérifier l'état de l'API et du modèle ;
-- expose un endpoint `/predict` pour faire une prédiction de churn à partir
-  de features simples (tenure, plaintes, durée de session, type d’abonnement,
-  région) ;
-- journalise chaque requête de prédiction dans `logs/predictions.log` au
-  format JSON (une ligne par prédiction).
-
-
-Cette API illustre une étape "Serve" dans un pipeline MLOps minimal :
-un modèle versionné est promu côté registry, puis utilisé par un service
-d’inférence léger.
-"""
 
 
 import json
