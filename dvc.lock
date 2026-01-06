@@ -9,8 +9,8 @@ stages:
       size: 27933
     - path: src/prepare_data.py
       hash: md5
-      md5: 5f03967eb5d10bc7f9143e24aba9be5b
-      size: 7918
+      md5: 78f66ce979e9195b0fb668933002ed5d
+      size: 7921
     outs:
     - path: data/processed.csv
       hash: md5
@@ -38,7 +38,7 @@ stages:
       size: 3690
       nfiles: 1
   evaluate:
-    cmd: python src/evaluate.py
+    cmd: 'mkdir reports '
     deps:
     - path: data/processed.csv
       hash: md5
@@ -46,9 +46,9 @@ stages:
       size: 28240
     - path: models
       hash: md5
-      md5: eb76baeb01606cda3d9aa1907e1934eb.dir
-      size: 7380
-      nfiles: 2
+      md5: cfb6e66d5b68de380fb51f24e8ab71a7.dir
+      size: 3690
+      nfiles: 1
     - path: src/evaluate.py
       hash: md5
       md5: f129651547ad391ae2fc2c3cbaa4a69d

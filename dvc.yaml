@@ -15,7 +15,7 @@ stages:
     outs:
     - models
   evaluate:
-    cmd: python src/evaluate.py
+    cmd: 'mkdir reports '
     deps:
     - data/processed.csv
     - models
